@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import {HomeIcon} from "@heroicons/react/solid";
 import SidebarMenuItem from "./SidebarMenuItem";
 
 export default function Sidebar() {
@@ -12,7 +13,7 @@ export default function Sidebar() {
         alt="twitter_logo"
       ></Image>
       <div>
-        <SidebarMenuItem />
+        <SidebarMenuItem Icon={HomeIcon} text="home" active />
       </div>
     </div>
   );
